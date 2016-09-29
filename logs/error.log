@@ -469,3 +469,66 @@ Stack Trace:
 #2 {main}
 
 
+2016-09-29 02:07:21 Error: [Cake\View\Exception\MissingHelperException] Helper class LessHelper could not be found.
+Exception Attributes: array (
+  'class' => 'LessHelper',
+  'plugin' => 'Less',
+)
+Request URL: /dev/phpFrameworks/patientcare/doctors
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/doctors/edit/2
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Less', 'Less')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(1023): Cake\Core\ObjectRegistry->load('Less.Less', Array)
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(926): Cake\View\View->loadHelper('Less.Less', Array)
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(345): Cake\View\View->loadHelpers()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\ViewBuilder.php(351): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(118): Cake\View\ViewBuilder->build(Array, Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager))
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(610): Cake\Controller\Controller->createView()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\DoctorsController))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-09-29 02:09:01 Error: [Cake\View\Exception\MissingHelperException] Helper class LessHelper could not be found.
+Exception Attributes: array (
+  'class' => 'LessHelper',
+  'plugin' => 'Less',
+)
+Request URL: /dev/phpFrameworks/patientcare/doctors
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/doctors/edit/2
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Less', 'Less')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(1023): Cake\Core\ObjectRegistry->load('Less.Less', Array)
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(926): Cake\View\View->loadHelper('Less.Less', Array)
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(345): Cake\View\View->loadHelpers()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\ViewBuilder.php(351): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(118): Cake\View\ViewBuilder->build(Array, Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager))
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(610): Cake\Controller\Controller->createView()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\DoctorsController))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-09-29 02:12:26 Error: [Cake\View\Exception\MissingHelperException] Helper class LessHelper could not be found.
+Exception Attributes: array (
+  'class' => 'LessHelper',
+  'plugin' => 'Less',
+)
+Request URL: /dev/phpFrameworks/patientcare/doctors
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/doctors/edit/2
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Less', 'Less')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(1023): Cake\Core\ObjectRegistry->load('Less.Less', Array)
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(926): Cake\View\View->loadHelper('Less.Less', Array)
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(345): Cake\View\View->loadHelpers()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\ViewBuilder.php(351): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(118): Cake\View\ViewBuilder->build(Array, Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager))
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(610): Cake\Controller\Controller->createView()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\DoctorsController))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+

@@ -22,7 +22,7 @@
         </tr>
         <tr>
             <th><?= __('Accepting Patients') ?></th>
-            <td><?= $doctor->accepting_patients ? __('Yes') : __('No'); ?></td>
+            <td ><?= $doctor->accepting_patients ? '<i class="fa fa-check-circle-o fa-2x success" aria-hidden="true"></i>' : '<i class="fa fa-times-circle-o fa-2x danger" aria-hidden="true"></i>'; ?></td>
         </tr>
     </table>
     <div class="related">
