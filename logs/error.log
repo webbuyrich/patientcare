@@ -44,3 +44,326 @@ Stack Trace:
 #8 {main}
 
 
+2016-09-28 06:24:22 Warning: Warning (2): date() expects at least 1 parameter, 0 given in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Template\Carriers\index.ctp, line 6]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+date - [internal], line ??
+include - APP/Template\Carriers\index.ctp, line 6
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-09-28 06:27:52 Error: [PDOException] SQLSTATE[HY000]: General error: 1298 Unknown or incorrect time zone: 'America/Mexico_City'
+Request URL: /dev/phpFrameworks/patientcare/carriers
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/carriers/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(95): PDO->exec('SET time_zone =...')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(428): Cake\Database\Connection->schemaCollection()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\CarriersTable))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\CarriersTable))
+#10 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(945): Cake\ORM\Table->query()
+#11 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#12 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\CarriersTable), Array)
+#13 C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\CarriersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\CarriersTable))
+#14 [internal function]: App\Controller\CarriersController->index()
+#15 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CarriersController))
+#18 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 {main}
+
+
+2016-09-28 06:34:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':00''' at line 1
+Request URL: /dev/phpFrameworks/patientcare/carriers
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/carriers/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(95): PDO->exec('SET time_zone =...')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(428): Cake\Database\Connection->schemaCollection()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\CarriersTable))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\CarriersTable))
+#10 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(945): Cake\ORM\Table->query()
+#11 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#12 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\CarriersTable), Array)
+#13 C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\CarriersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\CarriersTable))
+#14 [internal function]: App\Controller\CarriersController->index()
+#15 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CarriersController))
+#18 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 {main}
+
+
+2016-09-28 06:35:03 Error: [PDOException] SQLSTATE[HY000]: General error: 1298 Unknown or incorrect time zone: 'America/Mexico_City'
+Request URL: /dev/phpFrameworks/patientcare/carriers
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/carriers/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(95): PDO->exec('SET time_zone =...')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(428): Cake\Database\Connection->schemaCollection()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\CarriersTable))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\CarriersTable))
+#10 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(945): Cake\ORM\Table->query()
+#11 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#12 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\CarriersTable), Array)
+#13 C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\CarriersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\CarriersTable))
+#14 [internal function]: App\Controller\CarriersController->index()
+#15 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CarriersController))
+#18 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 {main}
+
+
+2016-09-28 06:37:48 Error: [PDOException] SQLSTATE[HY000]: General error: 1298 Unknown or incorrect time zone: 'US/Central'
+Request URL: /dev/phpFrameworks/patientcare/carriers
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/carriers/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(95): PDO->exec('SET time_zone =...')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(428): Cake\Database\Connection->schemaCollection()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\CarriersTable))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\CarriersTable))
+#10 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(945): Cake\ORM\Table->query()
+#11 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#12 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\CarriersTable), Array)
+#13 C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\CarriersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\CarriersTable))
+#14 [internal function]: App\Controller\CarriersController->index()
+#15 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CarriersController))
+#18 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 {main}
+
+
+2016-09-28 06:38:07 Error: [PDOException] SQLSTATE[HY000]: General error: 1298 Unknown or incorrect time zone: 'Central'
+Request URL: /dev/phpFrameworks/patientcare/carriers
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/carriers/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(95): PDO->exec('SET time_zone =...')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(428): Cake\Database\Connection->schemaCollection()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\CarriersTable))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\CarriersTable))
+#10 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(945): Cake\ORM\Table->query()
+#11 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#12 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\CarriersTable), Array)
+#13 C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\CarriersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\CarriersTable))
+#14 [internal function]: App\Controller\CarriersController->index()
+#15 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CarriersController))
+#18 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 {main}
+
+
+2016-09-28 06:38:37 Error: [PDOException] SQLSTATE[HY000]: General error: 1298 Unknown or incorrect time zone: 'Alaska'
+Request URL: /dev/phpFrameworks/patientcare/carriers
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/carriers/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(95): PDO->exec('SET time_zone =...')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(428): Cake\Database\Connection->schemaCollection()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\CarriersTable))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\CarriersTable))
+#10 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(945): Cake\ORM\Table->query()
+#11 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#12 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\CarriersTable), Array)
+#13 C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\CarriersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\CarriersTable))
+#14 [internal function]: App\Controller\CarriersController->index()
+#15 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CarriersController))
+#18 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 {main}
+
+
+2016-09-28 06:38:55 Error: [PDOException] SQLSTATE[HY000]: General error: 1298 Unknown or incorrect time zone: 'America/Bogota'
+Request URL: /dev/phpFrameworks/patientcare/carriers
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/carriers/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(95): PDO->exec('SET time_zone =...')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(428): Cake\Database\Connection->schemaCollection()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\CarriersTable))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\CarriersTable))
+#10 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(945): Cake\ORM\Table->query()
+#11 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#12 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\CarriersTable), Array)
+#13 C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\CarriersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\CarriersTable))
+#14 [internal function]: App\Controller\CarriersController->index()
+#15 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CarriersController))
+#18 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 {main}
+
+
+2016-09-28 06:40:39 Error: [PDOException] SQLSTATE[HY000]: General error: 1298 Unknown or incorrect time zone: 'UTC +5'
+Request URL: /dev/phpFrameworks/patientcare/carriers
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/carriers/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(95): PDO->exec('SET time_zone =...')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(428): Cake\Database\Connection->schemaCollection()
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\CarriersTable))
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(1242): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\CarriersTable))
+#10 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\ORM\Table.php(945): Cake\ORM\Table->query()
+#11 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#12 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\CarriersTable), Array)
+#13 C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\CarriersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\CarriersTable))
+#14 [internal function]: App\Controller\CarriersController->index()
+#15 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#17 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CarriersController))
+#18 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#19 {main}
+
+
+2016-09-28 06:42:05 Warning: Warning (2): date() expects at least 1 parameter, 0 given in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Template\Carriers\index.ctp, line 6]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+date - [internal], line ??
+include - APP/Template\Carriers\index.ctp, line 6
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-09-28 06:42:40 Error: Fatal Error (1): Call to undefined function dateTime() in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Template\Carriers\index.ctp, line 6]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-28 06:42:40 Error: [Cake\Error\FatalErrorException] Call to undefined function dateTime()
+Request URL: /dev/phpFrameworks/patientcare/carriers
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/carriers/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 6)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-28 06:43:17 Warning: Warning (4096): Object of class DateTime could not be converted to string in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Template\Carriers\index.ctp, line 6]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Carriers\index.ctp, line 6
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-09-28 06:45:08 Error: [Exception] DateTime::__construct(): Failed to parse time string (d/m/Y h:i:s A) at position 1 (/): Unexpected character
+Request URL: /dev/phpFrameworks/patientcare/carriers
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/carriers/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Template\Carriers\index.ctp(6): DateTime->__construct('d/m/Y h:i:s A')
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(992): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CarriersController))
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-09-28 21:39:37 Error: [Cake\View\Exception\MissingHelperException] Helper class formatHelper could not be found.
+Exception Attributes: array (
+  'class' => 'formatHelper',
+  'plugin' => NULL,
+)
+Request URL: /dev/phpFrameworks/patientcare/patients/view/1
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/patients
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('format', NULL)
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('format')
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(888): Cake\View\HelperRegistry->__isset('format')
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Template\Patients\view.ctp(63): Cake\View\View->__get('format')
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(992): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PatientsController))
+#10 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-09-29 01:17:39 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Template\Doctors\index.ctp, line 23]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-29 01:17:40 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /dev/phpFrameworks/patientcare/doctors
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/doctors/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 23)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

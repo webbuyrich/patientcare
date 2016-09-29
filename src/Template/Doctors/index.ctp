@@ -19,7 +19,7 @@
             <tr>
                 <td><?= $this->Number->format($doctor->id) ?></td>
                 <td><?= h($doctor->name) ?></td>
-                <td><?= h($doctor->accepting_patients) ?></td>
+                <td><?= $doctor->accepting_patients ? __('Yes') : __('No'); ?></td>
                 <td><?= h($doctor->created) ?></td>
                 <td><?= h($doctor->modified) ?></td>
                 <td class="actions">
