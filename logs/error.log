@@ -532,3 +532,177 @@ Stack Trace:
 #10 {main}
 
 
+2016-09-29 02:29:40 Error: Fatal Error (1): Class 'App\Model\Entity\DefaultPasswordHasher' not found in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Model\Entity\User.php, line 43]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-29 02:29:41 Error: [Cake\Error\FatalErrorException] Class 'App\Model\Entity\DefaultPasswordHasher' not found
+Request URL: /dev/phpFrameworks/patientcare/users/edit/1
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/users/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Mode...', 'C:\\xampp\\htdocs...', 43)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-29 02:31:22 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Model\Entity\User.php, line 16]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-29 02:31:22 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';'
+Request URL: /dev/phpFrameworks/patientcare/users/edit/1
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/users/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 16)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-29 02:31:56 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Model\Entity\User.php, line 16]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-29 02:31:56 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';'
+Request URL: /dev/phpFrameworks/patientcare/users/edit/1
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/users/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 16)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-29 02:36:59 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login.ctp() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login.ctp',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /dev/phpFrameworks/patientcare/users/login.ctp
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-09-29 02:40:47 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login.ctp() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login.ctp',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /dev/phpFrameworks/patientcare/users/login.ctp
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-09-29 02:42:44 Error: Fatal Error (4): syntax error, unexpected '.', expecting '(' in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\UsersController.php, line 110]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-29 02:42:44 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '.', expecting '('
+Request URL: /dev/phpFrameworks/patientcare/users/login.ctp
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 110)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-29 02:43:19 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login.ctp() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login.ctp',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /dev/phpFrameworks/patientcare/users/login.ctp
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-09-29 02:46:45 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\login.ctp',
+)
+Request URL: /dev/phpFrameworks/patientcare/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-09-29 02:54:13 Error: Fatal Error (4): syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\UsersController.php, line 111]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-29 02:54:14 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /dev/phpFrameworks/patientcare/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 111)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-29 02:55:25 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\xampp\htdocs\dev\phpFrameworks\patientcare\src\Controller\AppController.php, line 61]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-09-29 02:55:26 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '}'
+Request URL: /dev/phpFrameworks/patientcare/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 61)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-09-29 03:00:17 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /dev/phpFrameworks/patientcare/users/logout
+Referer URL: http://localhost/dev/phpFrameworks/patientcare/
+Stack Trace:
+#0 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\dev\phpFrameworks\patientcare\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\dev\phpFrameworks\patientcare\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
