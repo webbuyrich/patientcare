@@ -19,7 +19,7 @@
             <tr>
                 <td><?= $this->Number->format($doctor->id) ?></td>
                 <td><?= h($doctor->name) ?></td>
-                <td><?= $doctor->accepting_patients ? __('Yes') : __('No'); ?></td>
+                <td class="text-center"><?= $doctor->accepting_patients ? '<i class="fa fa-check-circle-o fa-2x success" aria-hidden="true"></i>' : '<i class="fa fa-times-circle-o fa-2x danger" aria-hidden="true"></i>'; ?></td>
                 <td><?= h($doctor->created) ?></td>
                 <td><?= h($doctor->modified) ?></td>
                 <td class="actions">
